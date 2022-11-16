@@ -1,6 +1,20 @@
 
    <?php  
-    include_once('htmlpart.php');
+    require('htmlpart/htmlpart.php');
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
    ?>
     
    
