@@ -63,45 +63,45 @@
           <td></td>
           <td></td>
           <td></td>
-          <td class="calendar-day "> <a class="link" href="./index2.php?day="> 1</a> </td>
-          <td class="calendar-day "><a class="link" href="#"> 2</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 3</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 4</a></td>
+          <td class="calendar-day "> <a class="link" href="./index2.php?day=1"> 1</a> </td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=2"> 2</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=3"> 3</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=4"> 4</a></td>
         </tr>
         <tr>
-          <td class="calendar-day "><a class="link" href="#"> 5</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 6 </a></td>
-          <td class="calendar-day "><a class="link" href="#"> 7</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 8</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 9</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 10</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 11</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=5"> 5</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=6"> 6 </a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=7"> 7</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=8"> 8</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=9"> 9</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=10"> 10</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=11"> 11</a></td>
         </tr>
         <tr>
-          <td class="calendar-day "><a class="link" href="#"> 12</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 13</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 14</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 15</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 16</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 17</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 18</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=12"> 12</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=13"> 13</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=14"> 14</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=15"> 15</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=16"> 16</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=17"> 17</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=18"> 18</a></td>
         </tr>
         <tr>
-          <td class="calendar-day "><a class="link" href="#"> 19</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 20</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 21</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 22</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 23</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 24</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 25</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=19"> 19</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=20"> 20</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=21"> 21</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=22"> 22</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=23"> 23</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=24"> 24</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=25"> 25</a></td>
         </tr>
         <tr>
-          <td class="calendar-day "><a class="link" href="#"> 26</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 27</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 28</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 29</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 30</a></td>
-          <td class="calendar-day "><a class="link" href="#"> 31</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=26"> 26</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=27"> 27</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=28"> 28</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=29"> 29</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=30"> 30</a></td>
+          <td class="calendar-day "><a class="link" href="./index2.php?day=31"> 31</a></td>
         </tr>
       </table>
     </div>
