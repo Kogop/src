@@ -63,7 +63,7 @@
           <td></td>
           <td></td>
           <td></td>
-          <td class="calendar-day "> <a class="link" href="./index2.php"> 1</a> </td>
+          <td class="calendar-day "> <a class="link" href="./index2.php?day="> 1</a> </td>
           <td class="calendar-day "><a class="link" href="#"> 2</a></td>
           <td class="calendar-day "><a class="link" href="#"> 3</a></td>
           <td class="calendar-day "><a class="link" href="#"> 4</a></td>
