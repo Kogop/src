@@ -30,39 +30,31 @@
    
       if ($result->num_rows > 0) {
      // output data of each row
-         while($row = $result->fetch_assoc()) {     // TODO: когда две и > cпециальностей на одну дату, то заново создается шапка и название таблицы, переделать
-            #$number = $row["id_subject"];
-           # $sql_1 = "SELECT `title` FROM `subjects` WHERE id = ". $number. ";";
-            #$result_1 = $conn->query($sql_1);
-            #$row_1 = $result->fetch_assoc();
-            #echo $sql_1;
-            #$sql_2 = "SELECT * FROM `schedule` WHERE DAYOFMONTH(`date`) = ".$_GET['day'].";";
-            #$result_2 = $conn->query($sql_2);
-            #$sql_3 = "SELECT * FROM `schedule` WHERE DAYOFMONTH(`date`) = ".$_GET['day'].";";
-            #$result_3 = $conn->query($sql_3);
-            # <td class="."calendar-day ".">" . $row["id"]. "</td>
 
-       echo "<div class="."calendar-item>"."   
-         <div class="."calendar-head".">Exams</div>
-         <table>
-         <tr>
-           <th>Nazv predmeta</th>
-           <th>DATA AND VREMYA</th>
-           <th>KODE ITEM</th>
-           <th>NAZV SPEC</th>
-         </tr>
-         <table>
-            <tr>
-            
+     $out = "<div class="."calendar-item>"."   
+     <div class="."calendar-head".">Exams</div>
+     <table>
+     <tr>
+       <th>Nazv predmeta</th>
+       <th>DATA AND VREMYA</th>
+       <th>KODE ITEM</th>
+       <th>NAZV SPEC</th>
+     </tr>
+     <table>
+        <tr>
+        ";
+         while($row = $result->fetch_assoc()) {     
+            $out .= "
             <td class="."calendar-day "."> " . $row["title"]. "</td>
             <td class="."calendar-day "."> " . $row["date"]. "</td>
             <td class="."calendar-day "."> " . $row["id_speciality"]. "</td>
             <td class="."calendar-day "."> " . $row["nazv spec"]. "</td>
-            <br>
-            </table>
-            </div>
-            </div>";
+            </tr>";
          }
+         $out .= "</table>
+         </div>
+         </div>";
+         echo $out;
       } else {
       echo "0 results";
       }

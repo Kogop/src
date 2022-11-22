@@ -70,3 +70,9 @@
 	border-width: 9px;
 	margin-left: 0;
 }
+.POST-group {
+	text-align: center;
+	padding: 5px;
+	font-weight: 700;
+	font-size: 14px;
+}
