@@ -1,13 +1,13 @@
 <?php
-#$conn = mysqli_connect("sql302.epizy.com", "epiz_33013415", "VTDew7j8RlIBKR", "epiz_33013415_myDB");
-$conn = mysqli_connect("localhost", "root", "Idropmydick23", "exams");
+$conn = mysqli_connect("sql302.epizy.com", "epiz_33013415", "VTDew7j8RlIBKR", "epiz_33013415_myDB");
+#$conn = mysqli_connect("localhost", "root", "Idropmydick23", "exams");
 if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
 }
 
 
 if (!isset($_GET['day'])) {
-   require_once('./htmlpart.php');
+   require_once('./index.php');
    echo "NO exams today YAY ";
 } else {
    #require_once('./htmlpart.php');
@@ -28,14 +28,14 @@ if (!isset($_GET['day'])) {
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./htmlpart.php">HOME</a>
+      <a class="navbar-brand" href="./index.php">HOME</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./htmlpart.php">тоже Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.php">тоже Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
@@ -99,7 +99,8 @@ if (!isset($_GET['day'])) {
          </div>";
       echo $out;
    } else {
-      echo "0 results";
+       $outt = "<div class="."mb-3"."><h1>Экзаменов в этот день нет</h1></div>";
+      echo $outt;
    }
 ?>
    <?php $sql_1 = "select subjects.title 
@@ -109,14 +110,15 @@ if (!isset($_GET['day'])) {
 
    ?>
    <form action="" method="POST">
-      <div class="POST-group">
+   
+        <div class="mb-3">
          <label for="">Выберите время экзамена</label>
          <input type="time" name="exam_time" id="time_input">
-
-      </div>
-      <div class="POST-group">
+        </div>
+    
+      <div class="mb-3">
          <label for="">Введите название дисциплины</label>
-         <select name="title">
+         <select class="form-select" aria-label="Default select example" name="title">
             <?php
             while ($row_1 = $result_1->fetch_assoc()) { var_dump($row_1);   ?>
                <option value="<?php echo $row_1['title'];  ?>">
@@ -129,8 +131,8 @@ if (!isset($_GET['day'])) {
          </select>
 
       </div>
-      <div class="POST-group">
-         <button type="submit" name="submit_btn">Добавить экзамен</button>
+      <div class="mb-3">
+         <button type="submit" class="btn btn-primary" name="submit_btn">Добавить экзамен</button>
 
       </div>
    </form>
@@ -157,21 +159,19 @@ if (!isset($_GET['day'])) {
         # var_dump($sql_2);
       #}
       
-
       
+    
       
-
-     
+    
     
 
    }
 }
 
-
-
-
-
 mysqli_close($conn);
+
+
+
 
 
 
