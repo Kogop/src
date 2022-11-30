@@ -1,6 +1,6 @@
 <?php
-$conn = mysqli_connect("sql302.epizy.com", "epiz_33013415", "VTDew7j8RlIBKR", "epiz_33013415_myDB");
-#$conn = mysqli_connect("localhost", "root", "Idropmydick23", "exams");
+#$conn = mysqli_connect("sql302.epizy.com", "epiz_33013415", "VTDew7j8RlIBKR", "epiz_33013415_myDB");
+$conn = mysqli_connect("localhost", "root", "Idropmydick23", "exams");
 if (!$conn) {
    die("Connection failed: " . mysqli_connect_error());
 }
@@ -109,14 +109,15 @@ if (!isset($_GET['day'])) {
    $result_1 = $conn->query($sql_1);
 
    ?>
+   <div  style="width:300px; align-content: center;">
    <form action="" method="POST">
    
-        <div class="mb-3">
+        <div class="mb-3" style="padding: 15px; align-content: center;">
          <label for="">Выберите время экзамена</label>
          <input type="time" name="exam_time" id="time_input">
         </div>
     
-      <div class="mb-3">
+      <div class="mb-3" style="padding: 15px;">
          <label for="">Введите название дисциплины</label>
          <select class="form-select" aria-label="Default select example" name="title">
             <?php
@@ -131,12 +132,12 @@ if (!isset($_GET['day'])) {
          </select>
 
       </div>
-      <div class="mb-3">
+      <div class="mb-3" style="padding: 15px;">
          <button type="submit" class="btn btn-primary" name="submit_btn">Добавить экзамен</button>
 
       </div>
    </form>
-
+   </div>
 <?php
    if (isset($_POST['submit_btn'])) {
       //TODO сделать сейчас добавление времени и экза в бд
